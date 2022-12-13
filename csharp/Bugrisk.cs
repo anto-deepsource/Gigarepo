@@ -6,6 +6,12 @@ internal class Bugrisk
 {
     public static unsafe void CommonBugRiskPractices()
     {
+        double myDouble = 0.0;
+        
+        if (myDouble != double.NaN) {
+        
+        }
+        
         // CS-W1020: Calling `.ToString()` on an array does not stringify it.
         // https://deepsource.io/directory/analyzers/csharp/issues/CS-W1020
         var arr = new[] {1, 2, 3, 4, 5};
