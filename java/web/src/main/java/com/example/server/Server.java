@@ -19,6 +19,7 @@ import java.security.NoSuchAlgorithmException;
 import java.sql.*;
 
 final class A {
+      // hello
       protected int abc;
 }
 
