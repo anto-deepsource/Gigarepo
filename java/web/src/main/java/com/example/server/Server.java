@@ -18,7 +18,12 @@ import java.net.http.HttpResponse;
 import java.security.NoSuchAlgorithmException;
 import java.sql.*;
 
+final class A {
 
+      // This field is effectively private since A cannot be subclassed further.
+      protected int abc;
+
+}
 
 public class Server extends HttpServlet {
 
