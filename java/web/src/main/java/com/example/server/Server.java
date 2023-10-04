@@ -18,7 +18,10 @@ import java.net.http.HttpResponse;
 import java.security.NoSuchAlgorithmException;
 import java.sql.*;
 
-
+final class A {
+      // hello
+      protected int abc;
+}
 
 public class Server extends HttpServlet {
 
