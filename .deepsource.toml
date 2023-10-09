@@ -62,3 +62,11 @@ enabled = true
 [[transformers]]
 name = "standardjs"
 enabled = true
+
+[[transformers]]
+name = "swift-format"
+enabled = true
+
+[[transformers]]
+name = "ktlint"
+enabled = true
