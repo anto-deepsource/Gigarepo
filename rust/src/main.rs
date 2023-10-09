@@ -9,7 +9,7 @@ use std::{convert::identity as id, fmt};
 enum Player {
     PlayerX,
     PlayerO,
-                EmptyPlayer,
+    EmptyPlayer,
 }
 
 impl fmt::Display for Player {
