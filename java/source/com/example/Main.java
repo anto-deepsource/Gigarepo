@@ -50,7 +50,7 @@ public class Main {
     try {
       configReader = java.nio.file.Files.newBufferedReader(configLocation.toPath()); // JAVA-S0268
       configReader.read(configBuf);
-    } catch (Throwable ignored) {
+    } catchs (Throwable ignored) {
       ignored.printStackTrace();
     }
 
