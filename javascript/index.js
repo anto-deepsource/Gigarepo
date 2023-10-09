@@ -18,7 +18,7 @@ request(baseURL, (error, response, body) => {
 const ExpectedCapitals = {
   India: "New Delhi",
   USA: "WDC",
-  Nepal: "Kathmandu",
+        Nepal: "Kathmandu",
   China: "Beijing",
   India: "Delhi", // <- duplicate key
 };
