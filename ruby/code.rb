@@ -59,8 +59,8 @@ end
 
 # Raises "Invalid annotation keyword format detected"
 def foo
-  # TODO Replace this with bar
-  do_something
+            # TODO Replace this with bar
+            do_something
 end
 
 # Raises "Use `Range#cover?` instead of `Range#include?`"
