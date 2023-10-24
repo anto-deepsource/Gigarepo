@@ -34,7 +34,8 @@ public class Main {
    */
   public static void main(String[] args) throws IOException {
     File configLocation = new File(args[1]); // JAVA-E0406
-    BufferedReader configReader null;
+    BufferedReader configReader = null;
+    BufferedReader configReader1 = null;
     CharBuffer configBuf = CharBuffer.wrap(new String());
 
     HashMap<String, BigDecimal> hm = new HashMap<>();
@@ -50,7 +51,7 @@ public class Main {
     try {
       configReader = java.nio.file.Files.newBufferedReader(configLocation.toPath()); // JAVA-S0268
       configReader.read(configBuf);
-    } catchs (Throwable ignored) {
+    } catch (Throwable ignored) {
       ignored.printStackTrace();
     }
 
