@@ -1,23 +1,23 @@
-import React from 'react'
-import propTypes from 'prop-types'
+import React from "react";
+import propTypes from "prop-types";
 
 class TestingComponent extends React.Component {
-  handleClick () {
-    console.log('TestingComponent was clicked')
+  handleClick() {
+    console.log("TestingComponent was clicked");
   }
 
-  render () {
+  render() {
     <div
       onClick={() => this.handleClick.bind(this)}
       class={this.props.class_name}
     >
       Welcome to {this.props.title} TestingComponent Component
-    </div>
+    </div>;
   }
 }
 
 TestingComponent.propTypes = {
-  title: propTypes.string.isRequired
-}
+  title: propTypes.string.isRequired,
+};
 
-export default TestingComponent
+export default TestingComponent;
