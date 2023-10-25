@@ -1,24 +1,24 @@
-import logo from './logo.svg'
-import './App.css'
-import Home from './components/home'
+import logo from "./logo.svg";
+import "./App.css";
+import Home from "./components/home";
 
-function App () {
+function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' alt='logo_' />
-        <Home title='Welcome to DeepSource Enterprise' isHero />
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" alt="logo_" />
+        <Home title="Welcome to DeepSource Enterprise" isHero />
         <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Learn React
         </a>
       </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
