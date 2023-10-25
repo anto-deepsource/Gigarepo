@@ -4,7 +4,7 @@
 # encoding: ascii
 
 # Raises "use of deprecated BigDecimal.new"
-a = { "hello" => "world", "testing" => BigDecimal("123.456", 3) }
+a = {"hello" => "world", "testing" => BigDecimal("123.456", 3)}
 
 # Raises "`while`/`until` detected in `begin` block"
 begin
