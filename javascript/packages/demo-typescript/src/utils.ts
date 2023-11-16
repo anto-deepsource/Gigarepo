@@ -11,7 +11,7 @@ export function wrapInRejectedPromise(data: any) {
 export const tryCall = tryCall_;
 
 var tryCall_ = async function <T>(
-  func: () => Promise<T>
+  func: () => Promise<T>,
 ): Promise<[any, T | undefined]> {
   try {
     const ret = await func();
