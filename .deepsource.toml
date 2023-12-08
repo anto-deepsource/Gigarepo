@@ -1,72 +1,8 @@
 version = 1
 
 [[analyzers]]
-name = "java"
+name = "python"
 enabled = true
 
   [analyzers.meta]
-  runtime_version = "11"
-
-[[transformers]]
-name = "dotnet-format"
-enabled = true
-
-[[transformers]]
-name = "rustfmt"
-enabled = true
-
-[[transformers]]
-name = "php-cs-fixer"
-enabled = true
-
-[[transformers]]
-name = "google-java-format"
-enabled = true
-
-[[transformers]]
-name = "prettier"
-enabled = true
-
-[[transformers]]
-name = "rubocop"
-enabled = true
-
-[[transformers]]
-name = "gofmt"
-enabled = true
-
-[[transformers]]
-name = "black"
-enabled = true
-
-[[transformers]]
-name = "isort"
-enabled = true
-
-[[transformers]]
-name = "autopep8"
-enabled = true
-
-[[transformers]]
-name = "yapf"
-enabled = true
-
-[[transformers]]
-name = "gofumpt"
-enabled = true
-
-[[transformers]]
-name = "standardrb"
-enabled = true
-
-[[transformers]]
-name = "standardjs"
-enabled = true
-
-[[transformers]]
-name = "swift-format"
-enabled = true
-
-[[transformers]]
-name = "ktlint"
-enabled = true
+  runtime_version = "3.x.x"
