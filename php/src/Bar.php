@@ -142,3 +142,63 @@ class Bar
 function aFunc()
 {
 }
+
+class Application
+{
+    public function __construct()
+    {
+        // some code here..
+    }
+
+    /**
+     * Some comments here...
+     */
+    public function doSomething(): void
+    {
+    }
+
+    /**
+     * @param string $file
+     * @return void
+     */
+    public function fizzbuzz(string $file) { // Complexity 1
+        if ($file === null) return; // +1
+        $max = 0;
+        try {
+            $input = file_get_contents($file);
+            $max = intval($input);
+        } catch (e) { // +1
+            return;
+        }
+
+        if ($max < 0 || $max === 0 || $max === null) return; // +3
+
+        $i = 0;
+        while ($i < $max) { // +1
+            switch ($i % 15) {
+                case 0: // +1
+                    print "fizzbuzz";
+                    break;
+                case 3:
+                case 6:
+                case 9:
+                case 12: // +4
+                    print "fizz";
+                    break;
+                case 5:
+                case 10: // +2
+                    print "buzz";
+                    break;
+                default: print $i;
+            };
+            $i += 1;
+        }
+    }
+
+    /**
+     * Some comments here...
+     */
+    public function newMethod(): void
+    {
+    }
+}
