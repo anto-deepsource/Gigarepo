@@ -163,6 +163,11 @@ class Application
      */
     public function fizzbuzz(string $file) { // Complexity 1
         if ($file === null) return; // +1
+        if ($file === null) return; // +1
+        if ($file === null) return; // +1
+        if ($file === null) return; // +1
+        if ($file === null) return; // +1
+
         $max = 0;
         try {
             $input = file_get_contents($file);
