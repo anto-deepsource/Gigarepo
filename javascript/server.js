@@ -36,7 +36,7 @@ app.use(
     target: "http://localhost:9000",
     changeOrigin: true,
     xfwd: true, // unsafe
-  })
+  }),
 );
 
 app.use(session({ cookie: { secure: false } }));
