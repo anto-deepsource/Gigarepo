@@ -1,4 +1,7 @@
 version = 1
 
 [[analyzers]]
-name = "ruby"
+name = "java"
+
+  [analyzers.meta]
+  runtime_version = 11
