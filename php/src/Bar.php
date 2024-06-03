@@ -1,9 +1,7 @@
 <?php
 $url = $_GET['url'];
+$newUrl = $url;
 
-function foo($param) {
-  curl_init($param);
+if (isset($newUrl)) {
+    curl_init($newUrl);
 }
-
-foo($url);
-curl_init($url);
