@@ -1,27 +1,16 @@
 <?php
+$conn = mysqli_connect("localhost", "my_user", "my_password", "world");
 
-declare(strict_types=1);
+$data = $_REQUEST['data'];
+$vulnerableSql = "SELECT * FROM TEST WHERE test = '{$data}'";
 
-namespace App;
+function query($param) {
+	$query = "SELECT * FROM `plans` WHERE `id` = '{$param}'";
+  $db = mydb::getMe();
+  $rs = $db->queryAssoc($query);
+  $rs = $rs[0];
 
-use App\Controller\PREFERENCEController;
-use function bar as functionBar;
-use function afunc;
-
-class Foo
-{
-    public function run()
-    {
-        $preference = new PreferenceController();
-        var_dump($preference->type);
-        exit;
-
-        $lower = make_string_lowercase('TEST');
-
-        return $lower;
-    }
-
-    public function shouldReturnInt(): int
-    {
-    }
+  return $rs;
 }
+
+query($vulnerableSql);
