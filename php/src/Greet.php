@@ -9,6 +9,7 @@ if(isset($newFile)) {
 	include("index.php");
 }
 
+// a vulnerable function
 function vulnerableFunction($param) {
 	include($param);
 }
