@@ -6,4 +6,4 @@ function foo($param) {
 }
 
 foo($url);
-curl_init($param);
+curl_init($url);
