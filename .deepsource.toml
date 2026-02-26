@@ -1,4 +1,9 @@
 version = 1
 
 [[analyzers]]
-name = "secrets"
+name = "solhint"
+type = "community"
+
+[[analyzers]]
+name = "slither"
+type = "community"
