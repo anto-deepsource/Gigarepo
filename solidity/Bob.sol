@@ -11,7 +11,7 @@ contract Bob {
         c.set(42); 
     }
 
-    function set_fixed(Alice c){ 
-        c.set_fixed(42); 
+    function set_fixed(Alice cc){ 
+        cc.set_fixed(42); 
     } 
 }
